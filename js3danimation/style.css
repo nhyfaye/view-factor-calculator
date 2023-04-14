@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  .content {
+    transition: all;
+    transition-duration: 5s;
+    
+  /*   animation-name: example1;
+    animation-iteration-count: 5;
+    animation-duration: 2500ms;
+    animation-direction: alternate-reverse;
+    animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1); */
+  /*   animation-iteration-count */
+  /*   animation-direction , normal, alternate, reverse */
+  /*   animation-timing-function  ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n)  */
+  }
+  .child {
+    transition: all;
+    transition-duration: 5s;
+    background-color: red;
+  }
+  .child-green {
+    background-color: green;
+  }
+  
+  @keyframes impt {
+    0% {
+      font-size: 10px;
+      font-size: 12px !important;
+    }
+  }
+  
+  @keyframes anim1 {
+    0% {
+      font-size: 10px;
+      top: 0;
+    }
+  /*   50% {
+      top: 30px;
+      left: 20px;
+    }
+    50% {
+      top: 10px
+    } */
+    50% {
+      top: 10px;
+      left: 20px;
+    }
+    100% {
+      font-size: 100px;
+      top: 0;
+    }
+  }
+  
+  @keyframes example1 {
+    
+    from { /* 0% */
+      font-size: 222px;
+    }
+    50% {
+      font-size: 123px;
+    }
+    to { /* 100% */
+      font-size: 500px;
+    }
+  }
